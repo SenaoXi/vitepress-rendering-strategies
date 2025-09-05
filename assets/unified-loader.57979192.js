@@ -26,7 +26,7 @@
       name: 'Landing',
       loader: async () => {
         try {
-          const module = await import('/assets/Landing.BeXhL4l4.js');
+          const module = await import('/vitepress-rendering-strategies/assets/Landing.xWyzDb6j.js');
           return module['Landing'];
         } catch (error) {
           
@@ -47,7 +47,7 @@
       name: 'ReactComp1',
       loader: async () => {
         try {
-          const module = await import('/assets/ReactComp1.6-BfYq12.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactComp1.c9kp9sRR.js');
           return module.default;
         } catch (error) {
           
@@ -68,7 +68,7 @@
       name: 'ReactComp3',
       loader: async () => {
         try {
-          const module = await import('/assets/ReactComp3.B5f-3IR5.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactComp3.bzk1Ohq6.js');
           return module.default;
         } catch (error) {
           
@@ -89,7 +89,7 @@
       name: 'ReactComp4',
       loader: async () => {
         try {
-          const module = await import('/assets/ReactComp4.CNd_-HZ6.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactComp4.CoMpYBxI.js');
           return module['ReactComp4'];
         } catch (error) {
           
@@ -110,7 +110,7 @@
       name: 'ReactVueSharedComp',
       loader: async () => {
         try {
-          const module = await import('/assets/ReactVueSharedComp.2Df5GHds.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactVueSharedComp.DnenCgn1.js');
           return module.default;
         } catch (error) {
           

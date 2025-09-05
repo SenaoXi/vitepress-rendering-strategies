@@ -1,40 +1,40 @@
 {
-  "/rendering-strategy": {
-    "loaderScript": "/assets/unified-loader.6629a869.js",
-    "modulePreloads": [
-      "/assets/Landing.BeXhL4l4.js",
-      "/assets/ReactComp1.6-BfYq12.js",
-      "/assets/ReactComp3.B5f-3IR5.js",
-      "/assets/ReactComp4.CNd_-HZ6.js",
-      "/assets/ReactVueSharedComp.2Df5GHds.js",
-      "/assets/chunks/renderSharedLicense.DVYbPCyI.js",
-      "/assets/chunks/jsx-runtime.BVsBYW55.js"
-    ],
-    "cssBundlePaths": [
-      "/assets/Landing.eilaqqpm.css",
-      "/assets/ReactComp1.CkOOUjfW.css",
-      "/assets/ReactComp2.h7Y-xdR4.css",
-      "/assets/ReactComp3.COR3jQwa.css"
-    ],
-    "ssrInjectScript": "/assets/ssr-inject-code.f847d6dd.js"
-  },
   "/zh/rendering-strategy": {
-    "loaderScript": "/assets/unified-loader.273c737a.js",
+    "loaderScript": "/vitepress-rendering-strategies/assets/unified-loader.57979192.js",
     "modulePreloads": [
-      "/assets/Landing.2Kh5Y4Z5.js",
-      "/assets/ReactComp1.c9kp9sRR.js",
-      "/assets/ReactComp3.bzk1Ohq6.js",
-      "/assets/ReactComp4.CoMpYBxI.js",
-      "/assets/ReactVueSharedComp.DnenCgn1.js",
-      "/assets/chunks/renderSharedLicense.Dh-O4cJS.js",
-      "/assets/chunks/jsx-runtime.BVsBYW55.js"
+      "/vitepress-rendering-strategies/assets/Landing.xWyzDb6j.js",
+      "/vitepress-rendering-strategies/assets/ReactComp1.c9kp9sRR.js",
+      "/vitepress-rendering-strategies/assets/ReactComp3.bzk1Ohq6.js",
+      "/vitepress-rendering-strategies/assets/ReactComp4.CoMpYBxI.js",
+      "/vitepress-rendering-strategies/assets/ReactVueSharedComp.DnenCgn1.js",
+      "/vitepress-rendering-strategies/assets/chunks/renderSharedLicense.Dh-O4cJS.js",
+      "/vitepress-rendering-strategies/assets/chunks/jsx-runtime.BVsBYW55.js"
     ],
     "cssBundlePaths": [
-      "/assets/Landing.eilaqqpm.css",
-      "/assets/ReactComp1.B_8-H-P-.css",
-      "/assets/ReactComp2.zEIHWJyy.css",
-      "/assets/ReactComp3.BvmKd6v5.css"
+      "/vitepress-rendering-strategies/assets/Landing.eilaqqpm.css",
+      "/vitepress-rendering-strategies/assets/ReactComp1.B_8-H-P-.css",
+      "/vitepress-rendering-strategies/assets/ReactComp2.zEIHWJyy.css",
+      "/vitepress-rendering-strategies/assets/ReactComp3.BvmKd6v5.css"
     ],
-    "ssrInjectScript": "/assets/ssr-inject-code.fd47ef97.js"
+    "ssrInjectScript": "/vitepress-rendering-strategies/assets/ssr-inject-code.fd47ef97.js"
+  },
+  "/rendering-strategy": {
+    "loaderScript": "/vitepress-rendering-strategies/assets/unified-loader.4925989a.js",
+    "modulePreloads": [
+      "/vitepress-rendering-strategies/assets/Landing.Cno60ubr.js",
+      "/vitepress-rendering-strategies/assets/ReactComp1.6-BfYq12.js",
+      "/vitepress-rendering-strategies/assets/ReactComp3.B5f-3IR5.js",
+      "/vitepress-rendering-strategies/assets/ReactComp4.CNd_-HZ6.js",
+      "/vitepress-rendering-strategies/assets/ReactVueSharedComp.2Df5GHds.js",
+      "/vitepress-rendering-strategies/assets/chunks/renderSharedLicense.DVYbPCyI.js",
+      "/vitepress-rendering-strategies/assets/chunks/jsx-runtime.BVsBYW55.js"
+    ],
+    "cssBundlePaths": [
+      "/vitepress-rendering-strategies/assets/Landing.eilaqqpm.css",
+      "/vitepress-rendering-strategies/assets/ReactComp1.CkOOUjfW.css",
+      "/vitepress-rendering-strategies/assets/ReactComp2.h7Y-xdR4.css",
+      "/vitepress-rendering-strategies/assets/ReactComp3.COR3jQwa.css"
+    ],
+    "ssrInjectScript": "/vitepress-rendering-strategies/assets/ssr-inject-code.f847d6dd.js"
   }
 }
