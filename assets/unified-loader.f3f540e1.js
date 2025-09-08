@@ -1,7 +1,9 @@
 (async function() {
   const pageId = (
     function() {
-	let siteData = typeof window < "u" ? window.__VP_SITE_DATA__ : void 0, rawBase = siteData?.base ?? "/", base$1 = rawBase.endsWith("/") ? rawBase : rawBase + "/", pathname = decodeURI(location.pathname);
+	let siteData = typeof window < "u" ? window.__VP_SITE_DATA__ : void 0, rawBase = "/";
+	siteData && siteData.base ? rawBase = siteData.base : "__BASE__" in globalThis && typeof __BASE__ == "string" && (rawBase = __BASE__);
+	let base$1 = rawBase.endsWith("/") ? rawBase : rawBase + "/", pathname = decodeURI(location.pathname);
 	return pathname.startsWith(base$1) && (pathname = pathname.slice(base$1.length - 1)), pathname.startsWith("/") || (pathname = "/" + pathname), pathname = pathname.replace(/index\.html$/, "/").replace(/\.html$/, ""), pathname === "/" || pathname === "" ? "/index" : (pathname.endsWith("/") && (pathname += "index"), pathname = pathname.replace(/\/{2,}/g, "/"), pathname);
 }
   )();
