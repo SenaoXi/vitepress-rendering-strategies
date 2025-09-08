@@ -152,7 +152,7 @@
     result.status === 'fulfilled' && result.value.success
   ).length;
   
-  
+      
       console.log(
         `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✓%c Loaded ${successCount} / ${componentLoaders.length} React components for page: ${pageId}`,
         'color: #2579d9; font-weight: bold;',
