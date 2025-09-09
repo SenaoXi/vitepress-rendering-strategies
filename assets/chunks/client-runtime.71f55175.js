@@ -325,4 +325,35 @@ async function cssLoadingRuntime(highPriorityRenderStyles) {
 }
 
 //#endregion
-export { cssLoadingRuntime as __CSS_LOADING_RUNTIME__ };
+//#region src/shared/client-runtime.ts
+let clientRuntimeMetafileCache = null;
+const getClientRuntimeMetafile = async () => {
+	if (clientRuntimeMetafileCache) return clientRuntimeMetafileCache;
+	const fileURLToPath = await import("node:url").then((url) => url.fileURLToPath);
+	const extname = await import("node:path").then((path) => path.extname);
+	const createRequire = await import("node:module").then((module$1) => module$1.createRequire);
+	const fs = await import("node:fs").then((fs$1) => fs$1.default);
+	const createHash = await import("node:crypto").then((crypto) => crypto.createHash);
+	const currentFilePath = fileURLToPath(import.meta.url);
+	const fileExtension = extname(currentFilePath);
+	const __require = createRequire(import.meta.url);
+	let clientRuntimePath = __require.resolve("vitepress-rendering-strategies/shared/client/runtime");
+	if (fileExtension !== ".js")
+ /**
+	* The consumer application can pull the vitepress-rendering-strategies project
+	* and add it as a git sub-repository dependency within a monorepo.
+	* This approach is beneficial for the development and debugging of the vitepress-rendering-strategies project.
+	*/
+	clientRuntimePath = __require.resolve("vitepress-rendering-strategies/shared/client/runtime-dev");
+	const clientRuntimeContent = fs.readFileSync(clientRuntimePath, "utf-8");
+	const hash = createHash("sha256").update(clientRuntimeContent).digest("hex").substring(0, 8);
+	const clientRuntimeFileName = `client-runtime.${hash}.js`;
+	const clientRuntimeMetafile = {
+		fileName: clientRuntimeFileName,
+		content: clientRuntimeContent
+	};
+	return clientRuntimeMetafileCache = clientRuntimeMetafile;
+};
+
+//#endregion
+export { cssLoadingRuntime as __CSS_LOADING_RUNTIME__, getClientRuntimeMetafile };
