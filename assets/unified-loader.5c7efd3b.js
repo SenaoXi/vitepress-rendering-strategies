@@ -1,10 +1,10 @@
 (async function() {
   const pageId = (
     function() {
-	let siteData = typeof window < "u" ? window.__VP_SITE_DATA__ : void 0, rawBase = "/";
-	siteData && siteData.base ? rawBase = siteData.base : "__BASE__" in globalThis && typeof __BASE__ == "string" && (rawBase = __BASE__);
-	let base$1 = rawBase.endsWith("/") ? rawBase : rawBase + "/", pathname = decodeURI(location.pathname);
-	return pathname.startsWith(base$1) && (pathname = pathname.slice(base$1.length - 1)), pathname.startsWith("/") || (pathname = "/" + pathname), pathname = pathname.replace(/index\.html$/, "/").replace(/\.html$/, ""), pathname === "/" || pathname === "" ? "/index" : (pathname.endsWith("/") && (pathname += "index"), pathname = pathname.replace(/\/{2,}/g, "/"), pathname);
+  let siteData = typeof window < "u" ? window.__VP_SITE_DATA__ : void 0, rawBase = "/";
+  siteData && siteData.base ? rawBase = siteData.base : "__BASE__" in globalThis && typeof __BASE__ == "string" && (rawBase = __BASE__);
+  let base$1 = rawBase.endsWith("/") ? rawBase : rawBase + "/", pathname = decodeURI(location.pathname);
+  return pathname.startsWith(base$1) && (pathname = pathname.slice(base$1.length - 1)), pathname.startsWith("/") || (pathname = "/" + pathname), pathname = pathname.replace(/index\.html$/, "/").replace(/\.html$/, ""), pathname === "/" || pathname === "" ? "/index" : (pathname.endsWith("/") && (pathname += "index"), pathname = pathname.replace(/\/{2,}/g, "/"), pathname);
 }
   )();
 
@@ -28,7 +28,7 @@
       name: 'Landing',
       loader: async () => {
         try {
-          const module = await import('/vitepress-rendering-strategies/assets/Landing.Cno60ubr.js');
+          const module = await import('/vitepress-rendering-strategies/assets/Landing.u3EKThfk.js');
           return module['Landing'];
         } catch (error) {
           
@@ -49,7 +49,7 @@
       name: 'ReactComp1',
       loader: async () => {
         try {
-          const module = await import('/vitepress-rendering-strategies/assets/ReactComp1.6-BfYq12.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactComp1.c9kp9sRR.js');
           return module.default;
         } catch (error) {
           
@@ -70,7 +70,7 @@
       name: 'ReactComp3',
       loader: async () => {
         try {
-          const module = await import('/vitepress-rendering-strategies/assets/ReactComp3.B5f-3IR5.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactComp3.bzk1Ohq6.js');
           return module.default;
         } catch (error) {
           
@@ -91,7 +91,7 @@
       name: 'ReactComp4',
       loader: async () => {
         try {
-          const module = await import('/vitepress-rendering-strategies/assets/ReactComp4.CNd_-HZ6.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactComp4.CoMpYBxI.js');
           return module['ReactComp4'];
         } catch (error) {
           
@@ -112,7 +112,7 @@
       name: 'ReactVueSharedComp',
       loader: async () => {
         try {
-          const module = await import('/vitepress-rendering-strategies/assets/ReactVueSharedComp.2Df5GHds.js');
+          const module = await import('/vitepress-rendering-strategies/assets/ReactVueSharedComp.DnenCgn1.js');
           return module.default;
         } catch (error) {
           
