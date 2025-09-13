@@ -3,14 +3,14 @@
     "file": "assets/chunks/jsx-runtime.BVsBYW55.js",
     "name": "jsx-runtime"
   },
-  "_renderSharedLicense.DVYbPCyI.js": {
-    "file": "assets/chunks/renderSharedLicense.DVYbPCyI.js",
+  "_renderSharedLicense.Dh-O4cJS.js": {
+    "file": "assets/chunks/renderSharedLicense.Dh-O4cJS.js",
     "name": "renderSharedLicense"
   },
-  "en/rendering-strategy-comps/react/Landing.tsx": {
-    "file": "assets/Landing.CEU4oCaX.js",
+  "zh/rendering-strategy-comps/react/Landing.tsx": {
+    "file": "assets/Landing.u3EKThfk.js",
     "name": "Landing",
-    "src": "en/rendering-strategy-comps/react/Landing.tsx",
+    "src": "zh/rendering-strategy-comps/react/Landing.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js"
@@ -22,70 +22,70 @@
       "assets/react.CHdo91hT.svg"
     ]
   },
-  "en/rendering-strategy-comps/react/Landing/src/assets/react.svg": {
+  "zh/rendering-strategy-comps/react/Landing/src/assets/react.svg": {
     "file": "assets/react.CHdo91hT.svg",
-    "src": "en/rendering-strategy-comps/react/Landing/src/assets/react.svg"
+    "src": "zh/rendering-strategy-comps/react/Landing/src/assets/react.svg"
   },
-  "en/rendering-strategy-comps/react/ReactComp1.tsx": {
-    "file": "assets/ReactComp1.6-BfYq12.js",
+  "zh/rendering-strategy-comps/react/ReactComp1.tsx": {
+    "file": "assets/ReactComp1.c9kp9sRR.js",
     "name": "ReactComp1",
-    "src": "en/rendering-strategy-comps/react/ReactComp1.tsx",
+    "src": "zh/rendering-strategy-comps/react/ReactComp1.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js",
-      "_renderSharedLicense.DVYbPCyI.js"
+      "_renderSharedLicense.Dh-O4cJS.js"
     ],
     "css": [
-      "assets/ReactComp1.CkOOUjfW.css"
+      "assets/ReactComp1.B_8-H-P-.css"
     ]
   },
-  "en/rendering-strategy-comps/react/ReactComp2.tsx": {
-    "file": "assets/ReactComp2.BpmdzroC.js",
+  "zh/rendering-strategy-comps/react/ReactComp2.tsx": {
+    "file": "assets/ReactComp2.B5gn-8IG.js",
     "name": "ReactComp2",
-    "src": "en/rendering-strategy-comps/react/ReactComp2.tsx",
+    "src": "zh/rendering-strategy-comps/react/ReactComp2.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js",
-      "_renderSharedLicense.DVYbPCyI.js"
+      "_renderSharedLicense.Dh-O4cJS.js"
     ],
     "css": [
-      "assets/ReactComp2.h7Y-xdR4.css"
+      "assets/ReactComp2.zEIHWJyy.css"
     ]
   },
-  "en/rendering-strategy-comps/react/ReactComp3.tsx": {
-    "file": "assets/ReactComp3.B5f-3IR5.js",
+  "zh/rendering-strategy-comps/react/ReactComp3.tsx": {
+    "file": "assets/ReactComp3.bzk1Ohq6.js",
     "name": "ReactComp3",
-    "src": "en/rendering-strategy-comps/react/ReactComp3.tsx",
+    "src": "zh/rendering-strategy-comps/react/ReactComp3.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js"
     ],
     "css": [
-      "assets/ReactComp3.COR3jQwa.css"
+      "assets/ReactComp3.BvmKd6v5.css"
     ]
   },
-  "en/rendering-strategy-comps/react/ReactComp4.tsx": {
-    "file": "assets/ReactComp4.CNd_-HZ6.js",
+  "zh/rendering-strategy-comps/react/ReactComp4.tsx": {
+    "file": "assets/ReactComp4.CoMpYBxI.js",
     "name": "ReactComp4",
-    "src": "en/rendering-strategy-comps/react/ReactComp4.tsx",
+    "src": "zh/rendering-strategy-comps/react/ReactComp4.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js"
     ]
   },
-  "en/rendering-strategy-comps/react/ReactComp5.tsx": {
-    "file": "assets/ReactComp5.qIg6GiDM.js",
+  "zh/rendering-strategy-comps/react/ReactComp5.tsx": {
+    "file": "assets/ReactComp5.Cb81MGyY.js",
     "name": "ReactComp5",
-    "src": "en/rendering-strategy-comps/react/ReactComp5.tsx",
+    "src": "zh/rendering-strategy-comps/react/ReactComp5.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js"
     ]
   },
-  "en/rendering-strategy-comps/react/ReactVueSharedComp.tsx": {
-    "file": "assets/ReactVueSharedComp.2Df5GHds.js",
+  "zh/rendering-strategy-comps/react/ReactVueSharedComp.tsx": {
+    "file": "assets/ReactVueSharedComp.DnenCgn1.js",
     "name": "ReactVueSharedComp",
-    "src": "en/rendering-strategy-comps/react/ReactVueSharedComp.tsx",
+    "src": "zh/rendering-strategy-comps/react/ReactVueSharedComp.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime.BVsBYW55.js"
