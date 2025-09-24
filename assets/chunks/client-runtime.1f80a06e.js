@@ -80,11 +80,11 @@ var require_picocolors_browser = /* @__PURE__ */ __commonJS({ "node_modules/.pnp
 //#endregion
 //#region utils/logger.ts
 var import_picocolors_browser = /* @__PURE__ */ __toESM(require_picocolors_browser(), 1);
-const isColorSupported = !!import_picocolors_browser.default.isColorSupported;
+const isColorSupported = Boolean(import_picocolors_browser.default.isColorSupported);
 const MAIN_NAME = "vitepress-rendering-strategies";
 let colors = null;
 if (isColorSupported) colors = import_picocolors_browser.default;
-const isNodeRuntime = typeof process !== "undefined" && !!(process.versions && process.versions.node);
+const isNodeRuntime = typeof process !== "undefined" && Boolean(process.versions && process.versions.node);
 const isProductionEnv = typeof import.meta !== "undefined" && import.meta.env?.PROD === true || typeof process !== "undefined" && false;
 const lightGeneralLogger = (type, message, group, options) => {
 	const { immediate = true } = options || {};
@@ -118,18 +118,18 @@ const lightGeneralLogger = (type, message, group, options) => {
 			messageColor = "color: #6c757d";
 			break;
 	}
-	const groupDisplayText = group ? group : "";
+	const groupDisplayText = group || "";
 	if (immediate) console.log(`%c${MAIN_NAME}%c${groupDisplayText ? `[${groupDisplayText}]` : ""}%c: » %c${icon}%c ${message}`, "color: #2579d9; font-weight: bold;", "color: #e28a00; font-weight: bold;", "color: gray;", iconColor, messageColor);
-	else return `
-      console.log(
-        \`%c${MAIN_NAME}%c${groupDisplayText ? `[${groupDisplayText}]` : ""}%c: » %c${icon}%c ${message}\`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        '${iconColor};',
-        '${messageColor};'
-      );
-    `;
+	return `
+    console.log(
+      \`%c${MAIN_NAME}%c${groupDisplayText ? `[${groupDisplayText}]` : ""}%c: » %c${icon}%c ${message}\`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      '${iconColor};',
+      '${messageColor};'
+    );
+  `;
 };
 
 //#endregion
@@ -178,7 +178,7 @@ function createCSSLoadingConfig(environment$1 = "production") {
 * @param options - Configuration options.
 * @returns Loading result details.
 */
-function loadHighPriorityStyles(highPriorityRenderStyles, options = {}) {
+async function loadHighPriorityStyles(highPriorityRenderStyles, options = {}) {
 	const { timeout = 8e3, retryCount = 2, retryDelay = 500, enablePerformanceMonitoring = true, enableDuplicateDetection = true, failureStrategy = "partial" } = options;
 	return new Promise((resolve) => {
 		const startTime = performance.now();
@@ -280,7 +280,7 @@ function loadHighPriorityStyles(highPriorityRenderStyles, options = {}) {
 				if (retries < retryCount) {
 					performanceMetrics.retriesPerformed++;
 					lightGeneralLogger("error", `CSS loading failed for ${styleUrl}, retrying (${retries + 1}/${retryCount})`, "css-loading-runtime");
-					if (link.parentNode) link.parentNode.removeChild(link);
+					if (link.parentNode) link.remove();
 					setTimeout(() => {
 						loadStyleWithRetry(styleUrl, retries + 1);
 					}, retryDelay * (retries + 1));
@@ -297,13 +297,11 @@ function loadHighPriorityStyles(highPriorityRenderStyles, options = {}) {
 					checkCompletion();
 				}
 			};
-			link.onload = onLoad;
-			link.onerror = onError;
-			document.head.appendChild(link);
+			link.addEventListener("load", onLoad);
+			link.addEventListener("error", onError);
+			document.head.append(link);
 		};
-		highPriorityRenderStyles.forEach((styleUrl) => {
-			loadStyleWithRetry(styleUrl);
-		});
+		for (const styleUrl of highPriorityRenderStyles) loadStyleWithRetry(styleUrl);
 	});
 }
 const environment = (() => {
@@ -319,7 +317,7 @@ async function cssLoadingRuntime(highPriorityRenderStyles) {
 	if (typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.search.includes("debug"))) {
 		if (loadResult.timedOut) lightGeneralLogger("error", `CSS loading timed out. Loaded: ${loadResult.loadedCount}/${loadResult.totalCount}`, "css-loading-runtime");
 		else if (loadResult.failedCount > 0) lightGeneralLogger("error", `Some CSS files failed to load: ${loadResult.failedCount}/${loadResult.totalCount} failed`, "css-loading-runtime");
-		if (loadResult.metrics && loadResult.metrics.totalLoadTime) lightGeneralLogger("success", `Total CSS loading time: ${loadResult.metrics.totalLoadTime.toFixed(2)}ms`, "css-loading-runtime");
+		if (loadResult.metrics?.totalLoadTime) lightGeneralLogger("success", `Total CSS loading time: ${loadResult.metrics.totalLoadTime.toFixed(2)}ms`, "css-loading-runtime");
 	}
 	return loadResult;
 }

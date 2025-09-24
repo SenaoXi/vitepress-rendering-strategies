@@ -2,9 +2,9 @@
   const pageId = (
     function() {
   let siteData = typeof window < "u" ? window.__VP_SITE_DATA__ : void 0, rawBase = "/";
-  siteData && siteData.base ? rawBase = siteData.base : "__BASE__" in globalThis && typeof __BASE__ == "string" && (rawBase = __BASE__);
-  let base$1 = rawBase.endsWith("/") ? rawBase : rawBase + "/", pathname = decodeURI(location.pathname);
-  return pathname.startsWith(base$1) && (pathname = pathname.slice(base$1.length - 1)), pathname.startsWith("/") || (pathname = "/" + pathname), pathname = pathname.replace(/\/{2,}/g, "/"), pathname;
+  siteData?.base ? rawBase = siteData.base : "__BASE__" in globalThis && typeof __BASE__ == "string" && (rawBase = __BASE__);
+  let base$1 = rawBase.endsWith("/") ? rawBase : `${rawBase}/`, pathname = decodeURI(location.pathname);
+  return pathname.startsWith(base$1) && (pathname = pathname.slice(base$1.length - 1)), pathname.startsWith("/") || (pathname = `/${pathname}`), pathname = pathname.replaceAll(/\/{2,}/g, "/"), pathname;
 }
   )();
 
@@ -32,15 +32,15 @@
           return module['Landing'];
         } catch (error) {
           
-      console.log(
-        `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component Landing: error.message`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        'color:rgb(233, 63, 80);',
-        'color: #dc3545;'
-      );
-    
+    console.log(
+      `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component Landing: error.message`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      'color:rgb(233, 63, 80);',
+      'color: #dc3545;'
+    );
+  
           return null;
         }
       }
@@ -53,15 +53,15 @@
           return module.default;
         } catch (error) {
           
-      console.log(
-        `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactComp1: error.message`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        'color:rgb(233, 63, 80);',
-        'color: #dc3545;'
-      );
-    
+    console.log(
+      `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactComp1: error.message`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      'color:rgb(233, 63, 80);',
+      'color: #dc3545;'
+    );
+  
           return null;
         }
       }
@@ -74,15 +74,15 @@
           return module.default;
         } catch (error) {
           
-      console.log(
-        `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactComp3: error.message`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        'color:rgb(233, 63, 80);',
-        'color: #dc3545;'
-      );
-    
+    console.log(
+      `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactComp3: error.message`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      'color:rgb(233, 63, 80);',
+      'color: #dc3545;'
+    );
+  
           return null;
         }
       }
@@ -95,15 +95,15 @@
           return module['ReactComp4'];
         } catch (error) {
           
-      console.log(
-        `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactComp4: error.message`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        'color:rgb(233, 63, 80);',
-        'color: #dc3545;'
-      );
-    
+    console.log(
+      `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactComp4: error.message`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      'color:rgb(233, 63, 80);',
+      'color: #dc3545;'
+    );
+  
           return null;
         }
       }
@@ -116,15 +116,15 @@
           return module.default;
         } catch (error) {
           
-      console.log(
-        `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactVueSharedComp: error.message`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        'color:rgb(233, 63, 80);',
-        'color: #dc3545;'
-      );
-    
+    console.log(
+      `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✗%c Failed to load component ReactVueSharedComp: error.message`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      'color:rgb(233, 63, 80);',
+      'color: #dc3545;'
+    );
+  
           return null;
         }
       }
@@ -155,13 +155,13 @@
   ).length;
   
       
-      console.log(
-        `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✓%c Loaded ${successCount} / ${componentLoaders.length} React components for page: ${pageId}`,
-        'color: #2579d9; font-weight: bold;',
-        'color: #e28a00; font-weight: bold;', 
-        'color: gray;',                      
-        'color: #13ef3e;',
-        'color: #2ba245;'
-      );
-    
+    console.log(
+      `%cvitepress-rendering-strategies%c[react-client-render]%c: » %c✓%c Loaded ${successCount} / ${componentLoaders.length} React components for page: ${pageId}`,
+      'color: #2579d9; font-weight: bold;',
+      'color: #e28a00; font-weight: bold;', 
+      'color: gray;',                      
+      'color: #13ef3e;',
+      'color: #2ba245;'
+    );
+  
 })();
