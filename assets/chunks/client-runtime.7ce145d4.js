@@ -164,17 +164,17 @@ function createCSSLoadingConfig(environment$1 = "production") {
 	return baseConfig[environment$1] ?? baseConfig.production;
 }
 /**
-* CSS loading runtime
+* CSS loading runtime.
 *
 * Features:
-* 1. Timeout protection - Prevent infinite waiting.
-* 2. Enhanced fault tolerance - Support partial loading success strategy.
-* 3. Performance monitoring - Detailed loading time and status tracking.
-* 4. Duplicate loading detection - Avoid loading duplicate CSS.
-* 5. Retry mechanism - Automatic retry when network is unstable.
-* 6. Progressive failure strategy - Balance completeness and performance.
+* 1) Timeout protection — prevent infinite waiting.
+* 2) Enhanced fault tolerance — support partial loading success strategy.
+* 3) Performance monitoring — detailed loading time and status tracking.
+* 4) Duplicate loading detection — avoid loading duplicate CSS.
+* 5) Retry mechanism — automatically retry when the network is unstable.
+* 6) Progressive failure strategy — balance completeness and performance.
 *
-* @param highPriorityRenderStyles - CSS file URL array.
+* @param highPriorityRenderStyles - Array of CSS file URLs.
 * @param options - Configuration options.
 * @returns Loading result details.
 */
