@@ -1,19 +1,10 @@
 (async function() {
   const pageId = (
-    function getCleanPathname() {
-  const siteData = typeof window !== "undefined" ? window.__VP_SITE_DATA__ : void 0;
-  let rawBase = "/";
-  if (siteData?.base) {
-    rawBase = siteData.base;
-  } else if ("__BASE__" in globalThis && typeof __BASE__ === "string") {
-    rawBase = __BASE__;
-  }
-  const base2 = rawBase.endsWith("/") ? rawBase : `${rawBase}/`;
-  let pathname = decodeURI(location.pathname);
-  if (pathname.startsWith(base2)) pathname = pathname.slice(base2.length - 1);
-  if (!pathname.startsWith("/")) pathname = `/${pathname}`;
-  pathname = pathname.replaceAll(/\/{2,}/g, "/");
-  return pathname;
+    function() {
+  let siteData = typeof window < "u" ? window.__VP_SITE_DATA__ : void 0, rawBase = "/";
+  siteData?.base ? rawBase = siteData.base : "__BASE__" in globalThis && typeof __BASE__ == "string" && (rawBase = __BASE__);
+  let base$1 = rawBase.endsWith("/") ? rawBase : `${rawBase}/`, pathname = decodeURI(location.pathname);
+  return pathname.startsWith(base$1) && (pathname = pathname.slice(base$1.length - 1)), pathname.startsWith("/") || (pathname = `/${pathname}`), pathname = pathname.replaceAll(/\/{2,}/g, "/"), pathname;
 }
   )();
 

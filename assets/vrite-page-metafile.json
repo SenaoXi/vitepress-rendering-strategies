@@ -1,6 +1,6 @@
 {
   "/zh/concept": {
-    "loaderScript": "/vitepress-rendering-strategies/assets/unified-loader.fd0d505d.js",
+    "loaderScript": "/vitepress-rendering-strategies/assets/unified-loader.cf8451f1.js",
     "modulePreloads": [
       "/vitepress-rendering-strategies/assets/Landing.u3EKThfk.js",
       "/vitepress-rendering-strategies/assets/ReactComp1.BMxtl_QH.js",
@@ -19,7 +19,7 @@
     "ssrInjectScript": "/vitepress-rendering-strategies/assets/ssr-inject-code.4579aa93.js"
   },
   "/concept": {
-    "loaderScript": "/vitepress-rendering-strategies/assets/unified-loader.62ea088a.js",
+    "loaderScript": "/vitepress-rendering-strategies/assets/unified-loader.56bc230b.js",
     "modulePreloads": [
       "/vitepress-rendering-strategies/assets/Landing.CEU4oCaX.js",
       "/vitepress-rendering-strategies/assets/ReactComp1.CmU4wdI0.js",
