@@ -1,0 +1,8 @@
+# vitepress-rendering-strategies
+
+Cross-framework Islands Architecture for VitePress
+
+## Table of Contents
+
+- [Quick Start](/vitepress-rendering-strategies/quick-start.md)
+- [VitePress Cross-Framework Rendering Strategy](/vitepress-rendering-strategies/concept.md)
