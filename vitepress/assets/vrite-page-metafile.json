@@ -1,0 +1,40 @@
+{
+  "/zh/concept": {
+    "loaderScript": "/docs-islands/vitepress/assets/unified-loader.d775f762.js",
+    "modulePreloads": [
+      "/docs-islands/vitepress/assets/Landing.ygwOyIBy.js",
+      "/docs-islands/vitepress/assets/ReactComp1.BMxtl_QH.js",
+      "/docs-islands/vitepress/assets/ReactComp3.bzk1Ohq6.js",
+      "/docs-islands/vitepress/assets/ReactComp4.CoMpYBxI.js",
+      "/docs-islands/vitepress/assets/ReactVueSharedComp.DnenCgn1.js",
+      "/docs-islands/vitepress/assets/chunks/renderSharedLicense.B7IuWPAN.js",
+      "/docs-islands/vitepress/assets/chunks/jsx-runtime.BVsBYW55.js"
+    ],
+    "cssBundlePaths": [
+      "/docs-islands/vitepress/assets/Landing.DsZ-oYy7.css",
+      "/docs-islands/vitepress/assets/ReactComp1.B_8-H-P-.css",
+      "/docs-islands/vitepress/assets/ReactComp2.zEIHWJyy.css",
+      "/docs-islands/vitepress/assets/ReactComp3.BvmKd6v5.css"
+    ],
+    "ssrInjectScript": "/docs-islands/vitepress/assets/ssr-inject-code.20556eb5.js"
+  },
+  "/concept": {
+    "loaderScript": "/docs-islands/vitepress/assets/unified-loader.7677e6ff.js",
+    "modulePreloads": [
+      "/docs-islands/vitepress/assets/Landing.tz_DNiP2.js",
+      "/docs-islands/vitepress/assets/ReactComp1.CmU4wdI0.js",
+      "/docs-islands/vitepress/assets/ReactComp3.B5f-3IR5.js",
+      "/docs-islands/vitepress/assets/ReactComp4.CNd_-HZ6.js",
+      "/docs-islands/vitepress/assets/ReactVueSharedComp.2Df5GHds.js",
+      "/docs-islands/vitepress/assets/chunks/renderSharedLicense.7ihd1Uht.js",
+      "/docs-islands/vitepress/assets/chunks/jsx-runtime.BVsBYW55.js"
+    ],
+    "cssBundlePaths": [
+      "/docs-islands/vitepress/assets/Landing.DsZ-oYy7.css",
+      "/docs-islands/vitepress/assets/ReactComp1.CkOOUjfW.css",
+      "/docs-islands/vitepress/assets/ReactComp2.h7Y-xdR4.css",
+      "/docs-islands/vitepress/assets/ReactComp3.COR3jQwa.css"
+    ],
+    "ssrInjectScript": "/docs-islands/vitepress/assets/ssr-inject-code.e53ef9ee.js"
+  }
+}

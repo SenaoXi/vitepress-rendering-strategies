@@ -1,0 +1,1 @@
+const s="/docs-islands/vitepress/spa-sync-render-disable-screenshot.webp",e="/docs-islands/vitepress/spa-sync-render-disable-video.mp4",r="/docs-islands/vitepress/spa-sync-render-screenshot.webp",d="/docs-islands/vitepress/spa-sync-render-video.mp4",n="/docs-islands/vitepress/spa-sync-render-side-effects-video.mp4";export{s as _,e as a,r as b,d as c,n as d};
